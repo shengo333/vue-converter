@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            {{result}}
+            <input  v-model="amount" type="number" placeholder="enter amount">
+            <select v-model="selectedRate" id="currency" name="currency">
+                <option v-for="(rate,key) in currencies " :value="rate">{{key}}</option>
+
+                
+            </select>
+
+        </div>
+        
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
